@@ -1,0 +1,126 @@
+body{
+    font-size: 15px;
+}
+main {
+    background: #d9d7d5;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  .Componets-div {
+    flex-basis: 100%;
+    max-width: 250px;
+  }
+
+  .general-com-div{
+    background-repeat: no-repeat;
+    border:solid 40px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 257px;
+    height: 440px;
+  }
+
+  .sedans-com-div{
+    background-color: hsl(31, 77%, 52%);
+    background-image: url(/images/icon-sedans.svg);
+    border-color: hsl(31, 77%, 52%);
+  }
+  .suvs-com-div{
+    background-color: hsl(184, 100%, 22%);
+    background-image: url(/images/icon-suvs.svg);
+    border-color: hsl(184, 100%, 22%);
+  }
+  .luxury-com-div{
+    background-color: hsl(179, 100%, 13%);
+    background-image: url(/images/icon-luxury.svg);
+    border-color: hsl(179, 100%, 13%);
+  }
+  
+  h1{
+    font-family: Big Shoulders Display;
+    color: white;
+    margin: 2.2em 0 1em 0;
+  }
+  .body-div{
+    line-height: 1.5;
+    color: hsla(0, 0%, 100%, 0.75);
+    margin-bottom: 5rem;
+  }
+  .learn-more-general{
+    border: solid 1px;
+    border-radius: 2.2em;
+    width: 8rem;
+    height: 2.3rem;
+    margin-bottom: 1rem;
+  }
+  .learn-more-sedan{
+    color: hsl(31, 77%, 52%);
+    cursor: pointer;
+  }
+  .learn-more-suv{
+    color: hsl(184, 100%, 22%);
+    cursor: pointer;
+  }
+  .learn-more-luxury{
+    color: hsl(179, 100%, 13%);
+    cursor: pointer;
+  }
+  .learn-more-sedan:hover{
+    color: hsla(0, 0%, 100%, 0.75);
+    background-color: hsl(31, 77%, 52%);
+  }
+  .learn-more-suv:hover{
+    color: hsla(0, 0%, 100%, 0.75);
+    background-color: hsl(184, 100%, 22%);
+  }
+  .learn-more-luxury:hover{
+    color: hsla(0, 0%, 100%, 0.75);
+    background-color: hsl(179, 100%, 13%);
+  }
+
+  @media screen and (min-width: 500px) {
+    main {
+      flex-wrap: nowrap;
+    }
+
+    .Componets-div {
+      flex-basis: 33%;
+    }
+   
+    }
+
+  @media screen and (max-width: 499px) {
+    h1{
+        margin: 2em 0 0.5em 0;
+      }
+    .general-com-div{
+        background-repeat: no-repeat;
+        border:solid 20px;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        width: 235px;
+        height: 320px;
+    }
+    .body-div{
+        line-height: 1.5;
+        color: hsla(0, 0%, 100%, 0.75);
+        margin-bottom: 1rem;
+      }
+    .sedans-com-div{
+        background-color: hsl(31, 77%, 52%);
+        border-color: hsl(31, 77%, 52%);
+      }
+    .suvs-com-div{
+        background-color: hsl(184, 100%, 22%);
+        border-color: hsl(184, 100%, 22%);
+      }
+    .luxury-com-div{
+        background-color: hsl(179, 100%, 13%);
+        border-color: hsl(179, 100%, 13%);
+      }
+    
+  }
